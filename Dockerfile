@@ -16,7 +16,9 @@ RUN apt-get update && \
     fonts-dejavu \
     gfortran \
     gcc && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* \
+    apt-get install pip \
+    pip install pandas
 
 # Julia dependencies
 # install Julia packages in /opt/julia instead of $HOME
